@@ -11,6 +11,9 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
+    def artists
+      @@artists << @artist if !@@artists.include?(@artist)
+    end
   end
 
   def count
@@ -21,8 +24,6 @@ class Song
     @@genres << @genre if !@@genres.include?(@genre)
   end
 
-  def artists
-    @@artists << @artist if !@@artists.include?(@artist)
-  end
+  
 
 end
