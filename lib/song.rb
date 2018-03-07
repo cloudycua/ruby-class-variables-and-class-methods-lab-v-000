@@ -18,11 +18,11 @@ class Song
   end
 
   def genres
-    @@genres << genre if !@@genres.include?(genre)
+    @@genres << @genre if !@@genres.include?(genre)
   end
 
   def artists
-    @@artists << artist if !@@artists.include?(artist)
+    @@artists << @artist if !@@artists.include?(artist)
   end
 
 end
