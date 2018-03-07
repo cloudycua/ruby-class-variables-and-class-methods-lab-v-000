@@ -6,7 +6,6 @@ class Song
   @@genres = []
   @@artists = []
 
-
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
@@ -20,6 +19,10 @@ class Song
 
   def genres
     @@genres << genre if !@@genres.include?(genre)
+  end
+
+  def artists
+    @@artists << artist if !@@artists.include?(artist)
   end
 
 end
