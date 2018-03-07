@@ -24,6 +24,6 @@ class Song
     @@genres << @genre if !@@genres.include?(@genre)
   end
 
-  
+
 
 end
